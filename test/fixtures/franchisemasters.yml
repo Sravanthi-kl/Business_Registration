@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  franchisetype: MyString
+  franchisename: MyString
+  franchiseename: MyString
+  owneremailid: MyString
+  openingdate: 2015-06-18
+  effectivefrom: 2015-06-18
+
+two:
+  franchisetype: MyString
+  franchisename: MyString
+  franchiseename: MyString
+  owneremailid: MyString
+  openingdate: 2015-06-18
+  effectivefrom: 2015-06-18

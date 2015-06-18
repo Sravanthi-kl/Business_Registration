@@ -1,6 +1,6 @@
 BusinessRegistration::Application.routes.draw do
 
-  resources :jb_branches
+  resources :jb_branches,:franchisemasters
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
