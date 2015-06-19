@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150618053632) do
+ActiveRecord::Schema.define(:version => 20150619080618) do
 
   create_table "franchisemasters", :force => true do |t|
     t.string   "franchisetype"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20150618053632) do
     t.date     "effectivefrom"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "owneraddress"
   end
 
   create_table "jb_branches", :force => true do |t|
