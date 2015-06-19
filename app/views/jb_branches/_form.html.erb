@@ -24,9 +24,9 @@
     
     <div>
       <%= f.label 'Branch Type*' %>
-        <%= f.select :branchtype,["Parentbranch","Subsidary"] %>
+        <%= f.select :branchtype,%w{Parentbranch Subsidary},:include_blank => true %> 
     </div>
-  .  
+   
     <div>
       <%= f.label 'Short Name*'%>
       <%= f.text_field :shortname, :class => 'title simple', :maxlength => 50, :style => 'width:633px'%>
@@ -34,7 +34,7 @@
     
     <div>
       <%= f.label 'City*'%>  
-      <%= f.select :city,["Bangalore","Chennai","Delhi","Hyderabad","Mumbai","Kolkatta"]%>
+      <%= f.select :city,["Bangalore","Chennai","Delhi","Hyderabad","Mumbai","Kolkatta"],:include_blank => true %>
     </div>
     
     <div>
