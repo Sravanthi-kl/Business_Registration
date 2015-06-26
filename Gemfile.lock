@@ -181,7 +181,7 @@ GEM
       rspec-mocks (~> 3.3.0)
       rspec-support (~> 3.3.0)
     rspec-support (3.3.0)
-    ruby-oci8 (2.1.8)
+    ruby-oci8 (2.1.7)
     sass (3.4.14)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -236,7 +236,7 @@ DEPENDENCIES
   less-rails (= 2.3.3)
   rails (= 3.2.12)
   rspec-rails (~> 3.0)
-  ruby-oci8 (~> 2.1.0)
+  ruby-oci8 (= 2.1.7)
   sass-rails (~> 3.2.3)
   sqlite3
   therubyracer
