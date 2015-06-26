@@ -1,5 +1,7 @@
 class JbBranchesController < ApplicationController
 
+
+  
 def index
     @jb_branches = JbBranch.all
     respond_to do |format|

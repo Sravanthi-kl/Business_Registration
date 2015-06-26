@@ -1,6 +1,19 @@
 BusinessRegistration::Application.routes.draw do
 
-  resources :jb_branches,:franchisemasters
+  
+ 
+ resources :jb_branches
+ resources :franchisemasters
+  get 'frontpages/home'
+  
+
+
+  #get "franchisemasters/index"
+  #get "franchisemasters/new"
+  #get "franchisemasters/show"
+  #get "franchisemasters/edit"
+  #get "franchisemasters/update"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -50,7 +63,7 @@ BusinessRegistration::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'frontpages#home'
 
   # See how all your routes lay out with "rake routes"
 

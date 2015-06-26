@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(:version => 20150619080618) do
     t.string   "franchisename"
     t.string   "franchiseename"
     t.string   "owneremailid"
-    t.date     "openingdate"
-    t.date     "effectivefrom"
+    t.datetime "openingdate"
+    t.datetime "effectivefrom"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.string   "owneraddress"

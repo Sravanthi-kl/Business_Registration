@@ -2,10 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 gem "less-rails",'2.3.3'
+gem 'activerecord-oracle_enhanced-adapter', '~> 1.4.0'
+gem 'ruby-oci8', '~> 2.1.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-group :development do
+group :development, :test do
 	gem 'sqlite3'
+	gem 'rspec-rails', '~> 3.0'
+	gem 'factory_girl_rails'
 end
 
 gem 'therubyracer'
@@ -19,14 +23,19 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails','3.1.2'
 gem "twitter-bootstrap-rails", '2.2.7'
 
-# To use ActiveModel has_secure_password
+group :test do 
+
+gem 'faker' 
+gem 'capybara' 
+gem 'guard-rspec' 
+gem 'launchy' 
+end # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
@@ -36,7 +45,7 @@ gem "twitter-bootstrap-rails", '2.2.7'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano', '~> 3.4.0'
 
 # To use debugger
 # gem 'debugger'
