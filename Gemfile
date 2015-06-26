@@ -7,6 +7,8 @@ gem 'ruby-oci8', '~> 2.1.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
+	gem 'capistrano',"2.14.2"
+	gem 'capistrano-ext'
 	gem 'sqlite3'
 	gem 'rspec-rails', '~> 3.0'
 	gem 'factory_girl_rails'
@@ -43,9 +45,6 @@ end # To use ActiveModel has_secure_password
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
-# Deploy with Capistrano
-gem 'capistrano', '~> 3.4.0'
 
 # To use debugger
 # gem 'debugger'
