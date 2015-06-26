@@ -5,6 +5,7 @@ gem "less-rails",'2.3.3'
 gem 'activerecord-oracle_enhanced-adapter', '~> 1.4.0'
 gem 'ruby-oci8', '~> 2.1.0'
 gem 'i18n','0.6.4'
+gem 'execjs','2.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
